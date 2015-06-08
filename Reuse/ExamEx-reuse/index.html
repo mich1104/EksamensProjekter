@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="ReuseApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <title ng-controller="filterControl">{{title}}</title>
+</head>
+<body>
+    <div ng-controller="filterControl">
+
+        <h2>Filter: name</h2>
+        <p>{{person | name}}</p>
+
+    </div>
+    <div ng-controller="filterControl">
+        <login-form header="Welcome back"></login-form>
+    </div>
+    <div ng-controller="caseControl">
+        <p>{{dashCase('test test')}}</p>
+    </div>
+</body>
+</html>

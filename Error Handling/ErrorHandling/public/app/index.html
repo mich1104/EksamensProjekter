@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+  <script src="../vendor/angular.min.js"></script>
+  <script src="../vendor/angular-route.min.js"></script>
+
+  <script src="app.js"></script>
+  <title></title>
+</head>
+
+<body ng-app="booksApp">
+
+<div>
+  <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#/findBook">Find Book</a></li>
+          <li><a href="#/newBook">Add Book</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top:5em;">
+    <div ng-view="ng-view" id="templateContainer"></div>
+  </div>
+</div>
+
+</body>

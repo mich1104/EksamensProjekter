@@ -1,0 +1,14 @@
+extends layout
+
+
+block content
+    table.table
+        thead
+            th Index
+            each val, index in data[0]
+                th= index
+        each obj, index in data
+            tr
+                td= index
+                each val, index in obj
+                    td= index+val

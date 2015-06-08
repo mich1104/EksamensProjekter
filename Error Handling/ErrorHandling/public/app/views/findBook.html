@@ -1,0 +1,21 @@
+<div class="container">
+    <div ng-show="errorOccurred" class="jumbotron" style="background-color: darksalmon">
+        <p style="color: black">An error occurred:</p>
+        <h3 style="color: black">{{errorStatus}}</h3>
+        <h3 style="color: black">{{error.error}}</h3>
+    </div>
+  <form class="navbar-form " role="search">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search" ng-model="isbn">
+    </div>
+    <button class="btn btn-default" ng-click="findBook()">Find</button>
+  </form>
+
+  <div class="container" style="margin-top: 2em;">
+    <div><label style="display: inline-block;min-width: 6em;">Title</label> {{book.title}}</div>
+  <div><label style="display: inline-block;min-width: 6em;">ISBN</label> {{book.isbn}}</div>
+  <div><label style="display: inline-block;min-width: 6em;">Description</label> {{book.description}}</div>
+  <div><label style="display: inline-block;min-width: 6em;">Price</label> {{book.price}}</div>
+  <div><label style="display: inline-block;min-width: 6em;">NumberOfPages</label> {{book.numberOfPages}}</div>
+</div>
+</div>

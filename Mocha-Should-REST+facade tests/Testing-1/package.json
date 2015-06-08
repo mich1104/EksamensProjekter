@@ -1,0 +1,15 @@
+{
+  "name": "Testing1",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.8.1",
+    "express": "~4.9.0",
+    "mocha": "^2.2.5",
+    "nock": "^2.3.0",
+    "request": "^2.56.0",
+    "should": "^6.0.3"
+  }
+}

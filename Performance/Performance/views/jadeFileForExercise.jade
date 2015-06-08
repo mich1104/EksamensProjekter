@@ -1,0 +1,17 @@
+extends layout
+block content
+    h3 #{introText}
+
+    table.table
+        thead
+            th Index
+            each val, index in members[0]
+                th= index
+        each obj, index in members
+            tr
+                td= index
+                each val in obj
+                    td= val
+
+   a(href="/") Back
+

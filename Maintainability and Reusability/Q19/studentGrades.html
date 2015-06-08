@@ -1,0 +1,16 @@
+<div ng-controller="ExamController">
+    <table class="table">
+        <thead>
+        <th></th>
+        <th ng-repeat="subject in studentsInfo.allCourses">{{subject.courseName}}</th>
+        <th>Average</th>
+        </thead>
+        <tbody>
+        <tr ng-repeat="student in studentsInfo.students">
+            <td>{{student.name}}</td>
+            <td ng-repeat="grades in student.grades">{{grades.grade}}</td>
+            <td>{{student.grades | avgFilter}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
